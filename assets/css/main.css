@@ -1,8 +1,10 @@
+@import url('syntax.css');
+
 html {
     font-family: 'PT Sans', sans-serif;
     background-color: #ffffff;
     color: #000000;
-    font-size: 20pt;
+    font-size: 150%;
 }
 
 a {

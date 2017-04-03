@@ -8,7 +8,7 @@
         {% if page.title %}
             <title>{{ page.title }}</title>
         {% else %}
-            <title>{{ site.name }}</title>
+            <title>{{ site.title }}</title>
         {% endif %}
 
         <meta name="description" content="{{ site.description }}">
@@ -17,9 +17,16 @@
         <link rel="stylesheet" href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css">
 
         <link rel="stylesheet" type="text/css" href="{{ '/assets/css/main.css' | relative_url }}">
-
-        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                processEscapes: true
+            },
+        });
         </script>
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     </head>
 
     <body>
