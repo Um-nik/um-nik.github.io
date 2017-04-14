@@ -29,6 +29,6 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-highlighter: pygments
-pygments_options:
-  tabsize: 4
+#highlighter: pygments
+#pygments_options:
+#  tabsize: 4

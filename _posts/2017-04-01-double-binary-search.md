@@ -30,13 +30,12 @@ What to do if the answer can be smaller than $ 1 $? Try $ 1 $; if answer is smal
 bool check(double x);
 
 double l = 1, r = INF;
-//main cycle
 for (int it = 0; it < IT; it++)
 {
 	double x = sqrt(l * r);
-    if (check(x))
-        l = x;
-    else
-        r = x;
+	if (check(x))
+		l = x;
+	else
+		r = x;
 }
 {% endhighlight %}

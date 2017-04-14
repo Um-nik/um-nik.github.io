@@ -10,6 +10,7 @@ layout: default
 
 # Математика
 * [Двоичный поиск для double]({{ site.baseurl }}{% post_url 2017-04-01-double-binary-search %})
+* [Быстрое преобразование Фурье]({{ site.baseurl }}{% post_url 2017-04-14-fft %})
 
 # Геометрия
 * [2D Геометрические примитивы]({{ site.baseurl }}{% post_url 2017-04-03-2d-geometry %})
