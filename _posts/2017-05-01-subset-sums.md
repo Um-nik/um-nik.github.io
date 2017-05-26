@@ -8,7 +8,7 @@ categories: algorithm
 
 ### Постановка задачи
 
-Дан массив $a[2^{n}]$, посчитать массив $b[2^{n}]$, где $b[mask] = \sum\limits_{submask \subseteq mask} a[submask]$
+Дан массив $a[2^{n}]$, посчитать массив $b[2^{n}]$, где $b[mask] = \sum_{submask \subseteq mask} a[submask]$
 
 ### Тривиальное решение
 
@@ -113,14 +113,14 @@ void solve()
 Воспользуемся принципом включений-исключений. Докажем по индукции, что
 
 $$
-a[z] = \sum\limits_{x \subseteq z} \left( -1 \right) ^{ | z | - | x |} b[x]
+a[z] = \sum_{x \subseteq z} \left( -1 \right) ^{ | z | - | x |} b[x]
 $$
 
 $$
 \begin{multline}
-a[z] = b[z] - \sum\limits_{y \subsetneq z} a[y] = b[z] - \sum\limits_{y \subsetneq z} \sum\limits_{x \subseteq y} \left( -1 \right) ^{| y | - | x |} b[x] = \\
-b[z] - \sum\limits_{x \subsetneq z} \sum\limits_{x \subseteq y \subsetneq z} \left( -1 \right) ^{| y | - | x |} b[x] = b[z] - \sum\limits_{x \subsetneq z} \left( b[x] \sum\limits_{y \subsetneq \left( z \oplus x \right)} \left( -1 \right) ^{| y |} \right) = \\
-b[z] - \sum\limits_{x \subsetneq z} \left( b[x] \left( -1 \right) ^{| z \oplus x |} \left( -1 \right) \right) = \sum\limits_{x \subseteq z} \left( -1 \right) ^{| z | - | x |} b[x]
+a[z] = b[z] - \sum_{y \subsetneq z} a[y] = b[z] - \sum_{y \subsetneq z} \sum_{x \subseteq y} \left( -1 \right) ^{| y | - | x |} b[x] = \\
+b[z] - \sum_{x \subsetneq z} \sum_{x \subseteq y \subsetneq z} \left( -1 \right) ^{| y | - | x |} b[x] = b[z] - \sum_{x \subsetneq z} \left( b[x] \sum_{y \subsetneq \left( z \oplus x \right)} \left( -1 \right) ^{| y |} \right) = \\
+b[z] - \sum_{x \subsetneq z} \left( b[x] \left( -1 \right) ^{| z \oplus x |} \left( -1 \right) \right) = \sum_{x \subseteq z} \left( -1 \right) ^{| z | - | x |} b[x]
 \end{multline}
 $$
 
