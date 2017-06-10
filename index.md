@@ -17,10 +17,10 @@ layout: default
 * [Обратный степенной ряд]({{ site.baseurl }}{% post_url 2017-04-21-fft-division %})
 * [Деление многочленов с остатком]({{ site.baseurl }}{% post_url 2017-05-26-polynom-division %})
 
-
 # Геометрия
 * [2D Геометрические примитивы]({{ site.baseurl }}{% post_url 2017-04-03-2d-geometry %})
 
 # Классические задачи
+* [Hard Life]({{ site.baseurl }}{% post_url 2017-06-10-hardlife %})
 
 # Не алгоритмы
