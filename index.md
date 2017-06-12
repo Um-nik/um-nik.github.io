@@ -3,6 +3,8 @@ layout: default
 ---
 
 # Графы
+* [Центроид дерева]({{ site.baseurl }}{% post_url 2017-06-12-centroid %})
+* [Изоморфизм деревьев]({{ site.baseurl }}{% post_url 2017-06-12-tree-isomorphism %})
 
 # Структуры данных
 
