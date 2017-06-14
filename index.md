@@ -26,3 +26,4 @@ layout: default
 * [Hard Life]({{ site.baseurl }}{% post_url 2017-06-10-hardlife %})
 
 # Не алгоритмы
+* [Что такое ACM-задача]({{ site.baseurl }}{% post_url 2017-06-14-acm-problem %})
