@@ -12,6 +12,7 @@ layout: default
 * [Сумма по всем подмаскам]({{ site.baseurl }}{% post_url 2017-05-01-subset-sums %})
 
 # Строки
+* [Суффиксный массив]({{ site.baseurl }}{% post_url 2017-08-21-suffix-array %})
 
 # Математика
 * [Двоичный поиск для double]({{ site.baseurl }}{% post_url 2017-04-01-double-binary-search %})
